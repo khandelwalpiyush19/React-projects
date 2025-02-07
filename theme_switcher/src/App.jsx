@@ -1,39 +1,34 @@
- import { useState,useEffect } from 'react'
-import './App.css'
+import { useState, useEffect } from 'react';
+import './App.css';
+import Navbar from './Navbar';
 
 function App() { 
-const[toggle, setToggle] = useState("Dark")
-const [theme, setTheme] = useState('Dark')
+  const [theme, setTheme] = useState('Dark');
 
-useEffect(() => {
-  if(toggle === "Dark"){
-    setToggle('Dark')
-    setTheme('Dark')
-    document.body.style.backgroundColor = 'black'
-    document.body.style.color = 'white'
+  useEffect(() => {
+    if (theme === 'Dark') {
+      document.body.style.backgroundColor = 'black';
+      document.body.style.color = 'white';
+    } else {
+      document.body.style.backgroundColor = 'white';
+      document.body.style.color = 'black';
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'Dark' ? 'Light' : 'Dark');
   }
-  else{
-    setToggle('Light')
-    setTheme('Light')
-    document.body.style.backgroundColor = 'white'
-    document.body.style.color = 'black'
-  }
-  return () => {
-     
-      };
-}, [ ]);
-
-
-
 
   return (
     <>
+
+    <Navbar/>
       <h2>Theme Switcher</h2>
-      <button type='button' value={toggle} onClick={(e) => setToggle(e.target.value) }>
-        Dark
+      <button type='button' onClick={toggleTheme}>
+        {theme === 'Dark' ? 'Light' : 'Dark'}
       </button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
