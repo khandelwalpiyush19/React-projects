@@ -27,7 +27,6 @@ function App() {
     setCharacters(0);
   }
 
-
   return (
     <>
       <h1>
