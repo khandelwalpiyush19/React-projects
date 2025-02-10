@@ -13,7 +13,6 @@ function App() {
           <input type="text" placeholder='Enter the name' />
         </div>
         <div>
-
           <label htmlFor="Age">Age</label>
           <input type="number" placeholder='Enter the age' />
         </div>
