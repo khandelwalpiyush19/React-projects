@@ -1,9 +1,7 @@
 import './App.css'
 
 function App() {
-
-
-  return (
+return (
     <>
       <form action="" id='form'>
         <h2>CRUD app</h2>
