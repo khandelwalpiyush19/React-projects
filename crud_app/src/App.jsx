@@ -1,9 +1,14 @@
 import './App.css'
+import AddItem from './components/AddItems'
+import ListItems from './components/ListItems'
+ 
+
+
 
 function App() {
 return (
     <>
-      <form action="" id='form'>
+      {/* <form action="" id='form'>
         <h2>CRUD app</h2>
         <div>
 
@@ -72,8 +77,11 @@ return (
                 </td>
             </tr>
         </tbody>
-    </table>
-</div>
+    </table> */}
+
+    <AddItem/>
+    <ListItems/>
+{/* </div> */}
     </>
   )
 }
