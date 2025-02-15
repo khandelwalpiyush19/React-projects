@@ -1,28 +1,29 @@
 // src/features/itemsSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
-  items: []
-};
+const initialState = [];
 
 const itemsSlice = createSlice({
   name: 'items',
   initialState,
   reducers: {
     addItem: (state, action) => {
-      state.items.push(action.payload);
+      state.push(action.payload);
+    },
+    removeItem: (state, action) => {
+      return state.filter(item => item.id !== action.payload);
     },
     updateItem: (state, action) => {
-      const index = state.items.findIndex(item => item.id === action.payload.id);
+      const index = state.findIndex(item => item.id === action.payload.id);
       if (index !== -1) {
-        state.items[index] = action.payload;
+        state[index] = action.payload;
       }
     },
-    deleteItem: (state, action) => {
-      state.items = state.items.filter(item => item.id !== action.payload.id);
-    }
-  }
+    setItems: (state, action) => {
+      return action.payload;
+    },
+  },
 });
 
-export const { addItem, updateItem, deleteItem } = itemsSlice.actions;
+export const { addItem, removeItem, updateItem, setItems } = itemsSlice.actions;
 export default itemsSlice.reducer;
