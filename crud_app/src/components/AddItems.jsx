@@ -1,4 +1,3 @@
-// src/components/AddItem.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../features/itemsSlice';
@@ -15,24 +14,37 @@ const AddItem = () => {
       setFormData({ name: '', email: '', phone: '' });
     }
   };
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   return (
     <form onSubmit={onSubmit}>
       <input
         type="text"
+        name="name" // Add name attribute
         placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={formData.name}
+        onChange={handleChange}
       />
-       <input
+      <input
         type="text"
-        placeholder="subject"
-        value={subject}
-        onChange={(e) => setSubject(e.target.value)}
+        name="email" // Add name attribute
+        placeholder="Email"
+        value={formData.email}
+        onChange={handleChange}
+      />
+      <input
+        type="number"
+        name="phone" // Add name attribute
+        placeholder="Phone"
+        value={formData.phone}
+        onChange={handleChange}
       />
       <button type="submit">Add</button>
     </form>
