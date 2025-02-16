@@ -6,11 +6,6 @@ import { removeItem,updateItem } from '../features/itemsSlice';
 // import ../App.css;
 
 const ListItems = () => {
-
-
-
-
-
   
   const items = useSelector((state) => state.items);
   const dispatch = useDispatch();
