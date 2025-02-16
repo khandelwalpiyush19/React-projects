@@ -16,14 +16,7 @@ const ListItems = () => {
   const handleUpdate = (item) => {
     const updatedItem = {...item,quantity: item.quantity + 1};
     dispatch(updateItem(updatedItem));
-  };
-
-
-
-
-
-
-  
+  };  
   return (
     <>
     <table className='table'>
