@@ -1,4 +1,4 @@
-// src/features/itemsSlice.js
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = [];
