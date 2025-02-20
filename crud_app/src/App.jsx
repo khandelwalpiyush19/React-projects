@@ -12,16 +12,7 @@ return (
           
            
                
-        </tbody><tbody>
-            <tr>
-                <td>John</td>
-                <td>23</td>
-                <td>Maths</td>
-                <td>
-                    <button id='btn'>Edit</button>
-                    <button>Delete</button>
-                </td>
-            </tr>
+        < 
         </tbody>
     </table> */}
 
