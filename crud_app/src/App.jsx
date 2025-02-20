@@ -10,12 +10,7 @@ return (
     <>
       {/* <form action="" id='form'>
           
-        <thead>
-        on</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
+         
                 <td>John</td>
                 <td>23</td>
                 <td>Maths</td>
