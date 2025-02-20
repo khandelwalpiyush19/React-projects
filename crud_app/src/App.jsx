@@ -15,11 +15,7 @@ return (
           <label htmlFor="Name">Name</label>
           <input type="text" placeholder='Enter the name' />
         </div>
-        <div>
-          <label htmlFor="Age">Age</label>
-          <input type="number" placeholder='Enter the age' />
-        </div>
-        <div>
+         
           <label htmlFor="Subject">Subject</label>
           <input type="text" placeholder='Enter the Subject' />
         </div>
