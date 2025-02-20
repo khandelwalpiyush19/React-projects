@@ -11,11 +11,7 @@ return (
       {/* <form action="" id='form'>
           
         <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Subject</th>
-                <th>Action</th>
+        on</th>
             </tr>
         </thead>
         <tbody>
