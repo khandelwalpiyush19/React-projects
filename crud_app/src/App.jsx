@@ -14,11 +14,7 @@ return (
 
           <label htmlFor="Name">Name</label>
           <input type="text" placeholder='Enter the name' />
-        </div>
-         
-          <label htmlFor="Subject">Subject</label>
-          <input type="text" placeholder='Enter the Subject' />
-        </div>
+      
 
         <button type='button' id='btn'> Create</button>
       </form>
