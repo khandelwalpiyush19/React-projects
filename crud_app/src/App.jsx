@@ -11,12 +11,7 @@ return (
       {/* <form action="" id='form'>
           
            
-                <td>Maths</td>
-                <td>
-                    <button id='btn'>Edit</button>
-                    <button>Delete</button>
-                </td>
-            </tr>
+               
         </tbody><tbody>
             <tr>
                 <td>John</td>
