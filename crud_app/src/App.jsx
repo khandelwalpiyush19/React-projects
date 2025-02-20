@@ -9,17 +9,7 @@ function App() {
 return (
     <>
       {/* <form action="" id='form'>
-        <h2>CRUD app</h2>
-        <div>
-
-          <label htmlFor="Name">Name</label>
-          <input type="text" placeholder='Enter the name' />
-      
-
-        <button type='button' id='btn'> Create</button>
-      </form>
-      <div id='container'>
-    <table id='table'>
+          
         <thead>
             <tr>
                 <th>Name</th>
