@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
      const convertCurrency = async () => {
         try {
-          const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
+        const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
           const data = await response.json();
           console.log(data)
           const result = (data.rates[toCurrency] * amount);
